@@ -2,6 +2,7 @@
 using HastaneYonetim.Core.Models;
 using HastaneYonetim.Core.ViewModel;
 using HastaneYonetim.Models;
+using HastaneYonetim.Persistence;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
@@ -26,7 +27,7 @@ namespace HastaneYonetim.Controllers
         {
 
         }
-        public HesapController(IIsBirimi isBirimi)
+        public HesapController(IsBirimi isBirimi)
         {
             _isBirimi = isBirimi;
         }

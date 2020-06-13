@@ -1047,7 +1047,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Hesap\Giris.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Hakkinda.cshtml" />
     <Content Include="Views\Shared\_AdminNav.cshtml" />
     <Content Include="Views\Shared\_DoktorNav.cshtml" />
@@ -1166,6 +1165,36 @@
     <Content Include="Scripts\jquery-1.12.4.min.map" />
     <Content Include="Scripts\jquery.icheck.min.js.map" />
     <Content Include="Views\Home\Iletisim.cshtml" />
+    <Content Include="Views\Randevular\Duzenle.cshtml" />
+    <Content Include="Views\Bakimlar\BakimFormu.cshtml" />
+    <Content Include="Views\Bakimlar\_bakimKismi.cshtml" />
+    <Content Include="Views\Bakimlar\_Confirmation.cshtml" />
+    <Content Include="Views\Doktorlar\Detaylar.cshtml" />
+    <Content Include="Views\Doktorlar\DoktorProfili.cshtml" />
+    <Content Include="Views\Doktorlar\Duzenle.cshtml" />
+    <Content Include="Views\Doktorlar\Index.cshtml" />
+    <Content Include="Views\Yonet\TelefonNumarasiEkle.cshtml" />
+    <Content Include="Views\Yonet\SifreDegistir.cshtml" />
+    <Content Include="Views\Yonet\Index.cshtml" />
+    <Content Include="Views\Yonet\GirisleriYonet.cshtml" />
+    <Content Include="Views\Yonet\SifreYerlestir.cshtml" />
+    <Content Include="Views\Yonet\TelefonNumarasiDogrula.cshtml" />
+    <Content Include="Views\Hastalar\Detaylar.cshtml" />
+    <Content Include="Views\Hastalar\Index.cshtml" />
+    <Content Include="Views\Hastalar\HastaFormu.cshtml" />
+    <Content Include="Views\Raporlar\Randevular.cshtml" />
+    <Content Include="Views\Raporlar\Bakimlar.cshtml" />
+    <Content Include="Views\Raporlar\YaklasanRandevular.cshtml" />
+    <Content Include="Views\Shared\Kilitleme.cshtml" />
+    <Content Include="Views\Shared\_bakimKismi.cshtml" />
+    <Content Include="Views\Shared\YaklasanRandevulariGetir.cshtml" />
+    <Content Include="Views\Shared\Detaylar.cshtml" />
+    <Content Include="Views\Randevular\YaklasanRandevulariGetir.cshtml" />
+    <Content Include="Views\Randevular\Index.cshtml" />
+    <Content Include="Views\Randevular\GecersizRandevu.cshtml" />
+    <Content Include="Views\Randevular\_RandevuKısmi.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

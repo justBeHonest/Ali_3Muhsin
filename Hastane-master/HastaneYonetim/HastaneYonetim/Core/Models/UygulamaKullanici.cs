@@ -17,10 +17,10 @@ namespace HastaneYonetim.Models
 
         public bool? aktifMi { get; set; }
 
-        public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<UygulamaKullanici> manager)
+        public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<UygulamaKullanici> yonetici)
         {
 
-            var kullaniciKimligi = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
+            var kullaniciKimligi = await yonetici.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
             return kullaniciKimligi;
         }
     }

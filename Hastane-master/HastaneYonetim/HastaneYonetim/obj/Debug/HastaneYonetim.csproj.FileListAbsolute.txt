@@ -311,7 +311,9 @@ C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\b
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Newtonsoft.Json.dll
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.dll
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Extensions.Conventions.dll
+C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Extensions.Factory.dll
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Web.Common.dll
+C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Web.Common.WebHost.dll
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Web.Mvc.dll
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Web.WebApi.dll
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Owin.dll
@@ -413,7 +415,9 @@ C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\b
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Newtonsoft.Json.xml
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.xml
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Extensions.Conventions.xml
+C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Extensions.Factory.xml
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Web.Common.xml
+C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Web.Common.WebHost.xml
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Web.Mvc.xml
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Web.WebApi.xml
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\System.Buffers.xml
@@ -452,14 +456,10 @@ C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\b
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\tr\System.Web.WebPages.Deployment.resources.dll
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\tr\System.Web.WebPages.Razor.resources.dll
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\obj\Debug\HastaneYonetim.csproj.App.config
+C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\obj\Debug\HastaneYonetim.csprojAssemblyReference.cache
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\obj\Debug\HastaneYonetim.Migrations.InitialDb.resources
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\obj\Debug\HastaneYonetim.csproj.GenerateResource.cache
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\obj\Debug\HastaneYonetim.csproj.CoreCompileInputs.cache
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\obj\Debug\HastaneYonetim.csproj.CopyComplete
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\obj\Debug\HastaneYonetim.dll
 C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\obj\Debug\HastaneYonetim.pdb
-C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Extensions.Factory.dll
-C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Extensions.Factory.xml
-C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\obj\Debug\HastaneYonetim.csprojAssemblyReference.cache
-C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Web.Common.WebHost.dll
-C:\Users\HP\Downloads\Ali_3Muhsin\Hastane-master\HastaneYonetim\HastaneYonetim\bin\Ninject.Web.Common.WebHost.xml

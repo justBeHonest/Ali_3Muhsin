@@ -4,6 +4,7 @@ using System.Web.Mvc;
 using HastaneYonetim.Core;
 using HastaneYonetim.Core.Models;
 using HastaneYonetim.Core.ViewModel;
+using HastaneYonetim.Persistence;
 
 namespace HastaneYonetim.Controllers
 {
@@ -11,7 +12,7 @@ namespace HastaneYonetim.Controllers
     public class BakimlarController : Controller
     {
         private readonly IIsBirimi _isBirimi;
-        public BakimlarController(IIsBirimi isBirimi)
+        public BakimlarController(IsBirimi isBirimi)
         {
             _isBirimi = isBirimi;
         }

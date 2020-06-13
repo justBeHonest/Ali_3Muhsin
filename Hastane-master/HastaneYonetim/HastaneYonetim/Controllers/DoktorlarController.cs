@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 using HastaneYonetim.Core;
 using HastaneYonetim.Core.ViewModel;
+using HastaneYonetim.Persistence;
 using Microsoft.AspNet.Identity;
 
 namespace HastaneYonetim.Controllers
@@ -10,7 +11,7 @@ namespace HastaneYonetim.Controllers
     {
         private readonly IIsBirimi _isBirimi;
 
-        public DoktorlarController(IIsBirimi isBirimi)
+        public DoktorlarController(IsBirimi isBirimi)
         {
             _isBirimi = isBirimi;
         }

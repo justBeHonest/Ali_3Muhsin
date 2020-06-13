@@ -1,12 +1,12 @@
 ﻿@model HastaneYonetim.Core.ViewModel.RandevuFormuViewModel
 @{ ViewBag.Title = Model.Baslik; }
 <link href="~/Content/gridDoctor.css" rel="stylesheet" />
-@using (Html.BeginForm("Create", "Appointments", FormMethod.Post, new { @class = "form-horizontal form-label-left", autocomplete = "off" }))
+@using (Html.BeginForm("Olustur", "Randevular", FormMethod.Post, new { @class = "form-horizontal form-label-left", autocomplete = "off" }))
 {
 
 @Html.ValidationSummary(true)
                 @Html.AntiForgeryToken() @*@Html.HiddenFor(m => m.Doctor)*@
-                                @Html.HiddenFor(m => m.Patient)
+                                @Html.HiddenFor(m => m.Hasta)
                                                 <div class="row">
                                                     <div class="col-md-6 col-xs-12">
                                                         <div class="x_panel">
@@ -16,8 +16,8 @@
                                                                 <div class="form-group">
                                                                     <label class="control-label col-md-3 col-sm-3 col-xs-12">Doktor</label>
                                                                     <div class="col-md-9 col-sm-9 col-xs-12">
-                                                                        @Html.DropDownListFor(m => m.Doctor, new SelectList(Model.Doctors, "Id", "Name"), "Select one", new { @class = "form-control", id = "DoctorID" })
-                                                                        @Html.ValidationMessageFor(m => m.Doctor, string.Empty, new { @class = "" })
+                                                                        @Html.DropDownListFor(m => m.Doktor, new SelectList(Model.Doktorlar, "Id", "Ad"), "Birini seçiniz", new { @class = "form-control", id = "DoctorID" })
+                                                                        @Html.ValidationMessageFor(m => m.Doktor, string.Empty, new { @class = "" })
                                                                     </div>
                                                                 </div>
 
@@ -49,22 +49,22 @@
                                                                 <div class="form-group">
                                                                     <label class="control-label col-md-3 col-sm-3 col-xs-12">Tarih<span class="required">*</span></label>
                                                                     <div class="col-md-9 col-sm-9 col-xs-12">
-                                                                        @Html.TextBoxFor(m => m.Date, new { @class = "form-control date" })
-                                                                        @Html.ValidationMessageFor(m => m.Date)
+                                                                        @Html.TextBoxFor(m => m.Tarih, new { @class = "form-control date" })
+                                                                        @Html.ValidationMessageFor(m => m.Tarih)
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label class="control-label col-md-3 col-sm-3 col-xs-12">Zaman<span class="required">*</span> </label>
                                                                     <div class="col-md-9 col-sm-9 col-xs-12">
-                                                                        @Html.TextBoxFor(m => m.Time, new { @class = "form-control time" })
-                                                                        @Html.ValidationMessageFor(m => m.Time)
+                                                                        @Html.TextBoxFor(m => m.Saat, new { @class = "form-control time" })
+                                                                        @Html.ValidationMessageFor(m => m.Saat)
                                                                     </div>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label class="control-label col-md-3 col-sm-3 col-xs-12">Detaylar <span class="required">*</span></label>
                                                                     <div class="col-md-9 col-sm-9 col-xs-12">
-                                                                        @Html.TextAreaFor(m => m.Detail, new { @class = "form-control" })
-                                                                        @Html.ValidationMessageFor(m => m.Detail)
+                                                                        @Html.TextAreaFor(m => m.Detay, new { @class = "form-control" })
+                                                                        @Html.ValidationMessageFor(m => m.Detay)
                                                                     </div>
                                                                 </div>
 
@@ -87,7 +87,7 @@
     <script>$(document).ready(function () {
             $('#divAppointments').hide();
 
-            var URL = '/appointments/DoctorsList/';
+            var URL = '/Randevular/DoktorlarListesi/';
             $.getJSON(URL, function (data) {
                 var items = '<option value="">Doktor Seç</option>';
                 $.each(data, function (i, doctor) {
@@ -99,7 +99,7 @@
 
 
             $('#DoctorID').change(function () {
-                var URL = '/appointments/GetUpcommingAppointments/' + $('#DoctorID').val();
+                var URL = '/Randevular/YaklasanRandevular/' + $('#DoctorID').val();
 
                 $.ajax({
                     url: URL,
