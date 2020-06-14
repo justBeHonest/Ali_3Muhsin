@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ClinicManagement.Core.Models.Doctor>
+﻿@model IEnumerable<HastaneYonetim.Core.Models.Doktor>
 @{
     ViewBag.Title = "Index";
 }
@@ -20,17 +20,17 @@
                         <th>Uzmanlık </th>
                         <th>Durum</th>
                         <th>Hesap Durumu</th>
-                        <th><a href="@Url.Action("RegisterDoctor","Account")" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i>Ekle</a></th>
+                        <th><a href="@Url.Action("DoktorKayit","Hesap")" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i>Ekle</a></th>
                     </tr>
                 </thead>
                 @foreach (var item in Model)
                 {
                     <tr>
-                        <td>@item.Name </td>
-                        <td>@item.Phone</td>
-                        <td>@item.Specialization.Name</td>
+                        <td>@item.Ad </td>
+                        <td>@item.Telefon</td>
+                        <td>@item.Uzmanlik.Ad</td>
                         <td>@{
-                                if (item.IsAvailable == true)
+                                if (item.musaitMi == true)
                                  {
                                      <a href="#" style="padding: 3px 10px 3px 10px; background-color:green " class="badge" readonly>Mevcut</a>
                                  }
@@ -42,7 +42,7 @@
                         <td>
                             @{
                                 //cast to bool
-                                if ((bool) item.Physician.IsActive)
+                                if ((bool) item.Hekim.aktifMi)
                                 {
                                     <a href="#" style="padding: 3px 10px 3px 10px; background-color:green " class="badge" readonly>Aktif</a>
                                 }
@@ -53,7 +53,7 @@
                             }
                         </td>
                         <td>
-                            <a href="@Url.Action("Details","Doctors", new { id = item.Id})" class="btn btn-default btn-xs"><i class="fa fa-folder"></i>Detaylar</a>
+                            <a href="@Url.Action("Detaylar","Doktorlar", new { id = item.Id})" class="btn btn-default btn-xs"><i class="fa fa-folder"></i>Detaylar</a>
                         </td>
                     </tr>
                 }

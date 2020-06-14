@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using HastaneYonetim.Core.Models;
 using HastaneYonetim.Persistence;
 using HastaneYonetim.Models;
+using Microsoft.AspNetCore.Http.Authentication;
 
 namespace HastaneYonetim
 {

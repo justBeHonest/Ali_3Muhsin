@@ -40,7 +40,7 @@
                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                     <div>
                         <h6 class="my-0">Tarih Eklendi</h6>
-                        <small class="text-muted">@Model.Hasta.DateTime.ToString("MMM"), @Model.Hasta.DateTime.ToString("d ")- @Model.Hasta.DateTime.ToString("yyyy")-@Model.Hasta.DateTime.ToString("HH:mm")</small>
+                        <small class="text-muted">@Model.Hasta.TarihSure.ToString("MMM"), @Model.Hasta.TarihSure.ToString("d ")- @Model.Hasta.TarihSure.ToString("yyyy")-@Model.Hasta.TarihSure.ToString("HH:mm")</small>
                     </div>
                 </li>
                 <li class="list-group-item d-flex justify-content-between bg-light">
@@ -70,16 +70,16 @@
                     <tbody>
 
 
-                        @foreach (var item in Model.OpdAttendances)
+                        @foreach (var item in Model.Bakimlar)
                         {
                             <tr>
-                                <td>@item.ClinicRemarks</td>
-                                <td>@item.Diagnosis</td>
-                                <td>@item.SecondDiagnosis</td>
-                                <td>@item.ThirdDiagnosis</td>
-                                <td>@item.Therapy</td>
-                                <td>@item.Date.ToString("d")</td>
-                                <td>@Model.Hasta.Doktor.Ad</td>
+                                <td>@item.KlinikBulgular</td>
+                                <td>@item.Teshis</td>
+                                <td>@item.Teshis2</td>
+                                <td>@item.Teshis3</td>
+                                <td>@item.Terapi</td>
+                                <td>@item.Tarih.ToString("d")</td>
+
 
                             </tr>
 
@@ -99,7 +99,7 @@
             <div class="col-xs-12">
                 <a href="@Url.Action("Duzenle", "Hastalar", new { id= Model.Hasta.Id})" class="btn btn-primary"><i class="fa fa-edit fa-fw"></i>Hastayı Düzenle</a>
 
-                <a href="@Url.Action("Olustur", "OpdAttendances", new { id =Model.Hasta.Id})" class="btn btn-primary"><i class="fa fa-edit fa-fw"></i>Reçete Ekle</a>
+                <a href="@Url.Action("Olustur", "Bakimlar", new { id =Model.Hasta.Id})" class="btn btn-primary"><i class="fa fa-edit fa-fw"></i>Reçete Ekle</a>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
 
             </div>

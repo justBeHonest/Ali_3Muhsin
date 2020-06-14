@@ -23,11 +23,9 @@ namespace HastaneYonetim.Controllers
         private UygulamaKullaniciYoneticisi _kullaniciYoneticisi;
         private UygulamaRolYöneticisi _rolYoneticisi;
         private readonly IIsBirimi _isBirimi;
-        public HesapController()
-        {
 
-        }
-        public HesapController(IsBirimi isBirimi)
+        HesapController() { }
+        public HesapController(IIsBirimi isBirimi)
         {
             _isBirimi = isBirimi;
         }
@@ -52,13 +50,7 @@ namespace HastaneYonetim.Controllers
             private set { _kullaniciYoneticisi = value; }
         }
 
-        /*
-          public ApplicationSignInManager SignInManager
-        {
-            get { return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>(); }
-            private set { _signInManager = value; }
-        }
-         */
+    
 
         public UygulamaRolYöneticisi RolYoneticisi
         {
@@ -190,6 +182,7 @@ namespace HastaneYonetim.Controllers
             var viewModel = new DoktorFormuViewModel()
             {
                 Uzmanliklar = _isBirimi.Uzmanliklar.UzmanliklariGetir()
+                
 
             };
             return View("DoktorFormu", viewModel);
